@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/*container dont tous les éléments ne peuvent pas dépasser une width de 1060px*/
+.container {
+    max-width: 1060px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*pseudo-élément étant placé sous le h2 en raison de la position relative de ce derniere*/
+#exception h2::before {
+    content: "";
+    height: 424px;
+    width: 25px;
+    background: #f294929a;
+    position: absolute;
+    border-radius: 30px;
+    transform: rotate(90deg);
+    top: -173px;
+    left: calc(76% - 219px);
+}
+
+
+/*pseudo-élément étant placé sous le h2 en raison de la position relative de ce derniere*/
+#exception h2::after {
+    content: "";
+    height: 185px;
+    width: 25px;
+    background: #114357a1;
+    position: absolute;
+    border-radius: 30px 30px 30px 0;
+    transform: rotate(90deg);
+    top: -40px;
+    left: calc(76% - 42px);
+}
+
+
+/*bouton utiliser uniquement pour le header*/
+header .btn {
+    color: white;
+    background: inherit;
+    padding: 4px 0px;
+    border-radius: 50px;
+    margin: 4px 461px;
+    display: inline-block;
+    border: thin rgba(255, 255, 255, 0.699) solid;
+}
+
+
+/*bouton utilisé uniquement pour la section application*/
+article .btn {
+    color: white;
+    background: #F29492;
+    padding: 8px 15px;
+    border-radius: 50px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+/*section accueil puis utilisation du display:flex pour mettre côte à côte l'image et les titres*/
+#accueil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#accueil img {
+    width: 26%;
+    margin-right: 50px;
+}
+
+
+#accueil h2 {
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+
+#accueil p {
+    font-size: 15px;
+}
+
+
+/*section application*/
+#application {
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.151);
+    margin-bottom: 100px;
+}
+
+#application article {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+article h2 {
+    color: #F29492;
+}
+
+article ul li div {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+aside img {
+    height: 450px;
+    margin-top: -100px;
+}
+
+
+
+/*header*/
+header {
+    background-image: linear-gradient(to right,
+            #f29492d9,
+            #a6787df7 51%,
+            #3bbcf0d4), url(../img/03-Montre-560x420.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0 0 50px 50px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+/*taille du menu burger*/
+header i {
+    font-size: 20px;
+}
+
+/*utilisation du display:flex pour aligner l'image et les links pour le menu*/
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav img {
+    height: 40px;
+}
+
+/*display:flex pour aligner tous les links de la navbarre*/
+header nav ul {
+    display: flex;
+    margin-right: 108px;
+    font-size: 12px;
+}
+
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 63px;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+header div div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 0 95px;
+    scroll-padding-bottom: 17px;
+}
+
+
+header p {
+    font-size: 26px;
+    margin: 0;
+    padding-bottom: 26px;
+
+}
+
+
+
+/*h2 pour les deux pseudos éléments*/
+#exception h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+
+
+/*setion fonctionnalité*/
+#fonctionnalité article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+#fonctionnalité article:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+
+#fonctionnalité img {
+    width: 26%;
+    margin-right: 50px;
+}
+
+
+#fonctionnalité h2 {
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+
+
+#fonctionnalité p {
+    font-size: 15px;
+}
+
+
+
+/*footer*/
+footer {
+    background-image: linear-gradient(to right,
+            #f29492e0,
+            #a6787ded 54%,
+            #3bbcf0ed);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+}
+
+
+
+/*section présentation*/
+#présentation div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 0px 0 77px;
+}
+
+
+#présentation div article {
+    width: 22%;
+    margin-top: 25px;
+}
+
+
+#présentation {
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.151);
+}
+
+
+#présentation img {
+    width: 41px;
+}
+
+
+#présentation h2 {
+    padding-top: 70px;
+    margin: 0;
+    font-weight: 800;
+    color: #F29492;
+}
+
+
+
+/*menu responsive mobile*/
+.dropbtn {
+    background-color: #3BBCF0;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*ajout des couleurs et des bordures*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #3bbdf0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(135, 206, 250, 0.521);
+    border-radius: 15px;
+}
+
+
+
+/*Media querie pour les mobiles*/
+@media (max-width:768px) {
+
+    /*display:none utilisé pour cacher la listes des links dans la navbarre*/
+    header nav ul {
+        display: none;
+    }
+
+    /*une max-width de 90% pour éviter que les éléments se collent aux bordures*/
+    .container {
+        max-width: 90%;
+    }
+
+    /*flex-direction column pour aligner verticalement les éléments*/
+    #accueil {
+        flex-direction: column;
+    }
+
+    #accueil img {
+        margin-right: 0;
+        width: 250px;
+    }
+
+    #présentation div {
+        flex-direction: column;
+    }
+
+    #présentation div article {
+        width: 100%;
+    }
+
+    #présentation img {
+        width: 110px;
+    }
+
+    #fonctionnalité article {
+        flex-direction: column;
+    }
+
+    #fonctionnalité article:nth-of-type(2) {
+        flex-direction: column;
+    }
+
+    #fonctionnalité img {
+        margin-right: 0;
+        width: 250px;
+    }
+
+    /*display none utilisé pour cacherla liste des liens de la navbarre*/
+    header nav ul {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    #application {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    article ul li div {
+        padding-bottom: 23px;
+    }
+
+    #application ul li div {
+        padding-bottom: 63px;
+    }
+
+    #application article h2 {
+        color: #F29492;
+        margin: 0;
+    }
+
+    #application ul {
+        margin: 0;
+    }
+
+    aside img {
+        height: 450px;
+        margin-top: -52px;
+        margin-left: 54px;
+    }
+
+    /*ajustement des pseudo-éléments pour s'adapter à la résoltuions des tablettes*/
+    #exception h2::before {
+        content: "";
+        height: 219px;
+        width: 25px;
+        background: #f294929a;
+        position: absolute;
+        border-radius: 30px;
+        transform: rotate(90deg);
+        top: -33px;
+        left: calc(76% - 77px);
+    }
+
+    #exception h2::after {
+        content: "";
+        height: 173px;
+        width: 25px;
+        background: #114357a1;
+        position: absolute;
+        border-radius: 30px 30px 30px 0;
+        transform: rotate(90deg);
+        top: 0;
+        left: calc(76% - 24px);
+    }
+
+    /*le display-none utilisé ici pour cacher le menu du mobile*/
+    header i:nth-of-type(2) {
+        display: none;
+    }
+
+    header .btn {
+        display: none;
+    }
+
+    /*display none cache le menu burger pour laisser place aumenu mobile responsive*/
+    .fa-bars:before {
+        display: none;
+    }
+
+}
+
+
+
+/*Media querie pour les tablettes*/
+@media (min-width: 768px) and (max-width:990px) {
+
+    /*display:none utilisé pour cacher la listes des links dans la navbarre*/
+    header nav ul {
+        display: none;
+    }
+
+    #application aside {
+        display: none;
+    }
+
+    #application {
+        padding-bottom: 50px;
+    }
+
+    /*ajustement des pseudo-éléments pour s'adapter à la résoltuions des tablettes*/
+    #exception h2::before {
+        content: "";
+        height: 424px;
+        width: 25px;
+        background: #f294929a;
+        position: absolute;
+        border-radius: 30px;
+        transform: rotate(90deg);
+        top: -173px;
+        left: calc(76% - 172px);
+    }
+
+    #exception h2::after {
+        content: "";
+        height: 185px;
+        width: 25px;
+        background: #114357a1;
+        position: absolute;
+        border-radius: 30px 30px 30px 0;
+        transform: rotate(90deg);
+        top: -40px;
+        left: calc(76% - 10px);
+    }
+
+    /*le display-none utilisé ici pour cacher le menu du mobile*/
+    header i:nth-of-type(1) {
+        display: none;
+    }
+
+    header .btn {
+        display: none;
+    }
+
+}
+
+
+
+/*media querie pour le desktop*/
+@media (min-width: 991px) {
+
+    header i {
+        display: none !important;
+    }
+
+}
